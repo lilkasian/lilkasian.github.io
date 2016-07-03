@@ -1,16 +1,97 @@
 /*General*/
 .row {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .page {
     width: 100%;
     height: 100vh;
+    background:#e8b0e8;
 }
+
+h2 {
+    padding-top:30px;
+}
+
+h1 {
+    font-family:Papyrus !important;
+}
+
 
 /* Arrow */
 
 .arrow {
+    margin-top: calc(100vh - 350px);
+    height: 70px;
+}
+
+.arrows {
     margin-top: calc(100vh - 200px);
     height: 70px;
+}
+
+.front-arrow {
+    width: 100%;
+}
+
+.other-arrow {
+    width: 100%;
+}
+
+/*Text Animation*/
+
+svg {
+    padding-top:30px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    display:block;
+    left: 0 ;
+    width: auto !important;
+    height: auto !important;
+}
+text {
+    vertical-align: center;
+    font-family:Papyrus !important;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: draw 8s forwards;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: draw 8s forwards;
+  -moz-animation: draw 8s forwards;
+  -o-animation: draw 8s forwards;
+  -ms-animation: draw 8s forwards;
+  animation: draw 8s forwards;
+}
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
