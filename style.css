@@ -18,6 +18,13 @@ h1 {
 }
 
 
+/*Font Size*/
+@media only screen and (max-width: 400px) {
+                    h2 {font-size:120% !important;}
+                    p {font-size:90% !important}
+     }
+
+
 /* Arrow */
 
 .arrow {
@@ -31,6 +38,7 @@ h1 {
 }
 
 .front-arrow {
+    margin-top: calc(100vh - 350px) !important;
     width: 100%;
 }
 
@@ -40,7 +48,7 @@ h1 {
 
 /*Text Animation*/
 
-svg {
+/*svg {
     padding-top:30px;
     margin-left:auto !important;
     margin-right:auto !important;
@@ -49,6 +57,23 @@ svg {
     width: auto !important;
     height: auto !important;
 }
+*/
+.svg-container { 
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; 
+  vertical-align: middle; 
+  overflow: hidden; 
+}
+
+.svg-content { 
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 text {
     vertical-align: center;
     font-family:Papyrus !important;
